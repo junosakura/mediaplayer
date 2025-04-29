@@ -8,10 +8,8 @@
 		<script src="mediaplayer.js"></script>
 		<script>
 			window.addEventListener('DOMContentLoaded', () => {
-				const $audios = document.querySelectorAll('audio');
-				const $videos = document.querySelectorAll('video');
-				if ($audios) $audios.forEach(e => new MediaPlayer(e, 'audio'));
-				if ($videos) $videos.forEach(e => new MediaPlayer(e, 'video'));
+				document.querySelectorAll('audio').forEach(e => new MediaPlayer(e, 'audio'));
+				document.querySelectorAll('video').forEach(e => new MediaPlayer(e, 'video'));
 			});
 		</script>
 		<style>
@@ -66,10 +64,8 @@
 			<dt>JavaScript</dt>
 			<dd>
 				<div><code>window.addEventListener('DOMContentLoaded', () => {</code></div>
-				<div><code>	const $audios = document.querySelectorAll('audio');</code></div>
-				<div><code>	const $videos = document.querySelectorAll('video');</code></div>
-				<div><code>	if ($audios) $audios.forEach(e => new MediaPlayer(e, 'audio'));</code></div>
-				<div><code>	if ($videos) $videos.forEach(e => new MediaPlayer(e, 'video'));</code></div>
+				<div><code>	document.querySelectorAll('audio').forEach(e => new MediaPlayer(e, 'audio'));</code></div>
+				<div><code>	document.querySelectorAll('video').forEach(e => new MediaPlayer(e, 'video'));</code></div>
 				<div><code>});</code></div>
 			</dd>
 		</dl>
